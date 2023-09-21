@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   z-index: 0;
+  position: relative;
 }
 
 ol, ul {
@@ -226,6 +227,10 @@ nav li:hover {
   color: #B1663C;
 }
 
+.main-content {
+  margin-top: 5rem;
+}
+
 .barre-btn {
   display: flex;
   align-items: center;
@@ -249,21 +254,44 @@ nav li:hover {
   color: #FFFEF8;
 }
 
-.admin-bar {
-  z-index: 3;
-  margin: 0;
+.en-tete {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.admin-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: black;
   color: white;
   width: 100%;
   height: 3rem;
-  left: 0;
+  gap: 1rem;
 }
-.admin-bar__edit-mode {
-  font-size: 0.5rem;
+.admin-bar__edit-mode, .admin-bar__edit-icon {
+  height: 18px;
+  font-size: 14px;
+  line-height: 16px;
 }
-.admin-bar__edit-icon {
-  font-size: 0.5rem;
+
+.modif-note {
+  width: 84px;
+  height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  gap: 1rem;
+}
+
+.modif-note__icon, .modif-note__text {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

@@ -58,6 +58,10 @@ nav {
     }
   }
 }
+.main-content {
+  margin-top: 5rem;  
+}
+
 
 // Bloc pour la barre de selection 
 .barre-btn {
@@ -88,25 +92,53 @@ nav {
 }
 
 
-// Style Modification en Admin
 
-.admin-bar {
-  z-index: 3;
-  margin: 0;
+// Style Edition en Admin
+.en-tete{
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 1rem;
+
+}
+.admin-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  
+  display: flex;
+  flex-direction: row;
   align-items: center;
- 
+  justify-content: center;
   background-color: black;
   color: white;
-width: 100%;
-height: 3rem;
-left: 0;
-  &__edit-mode {
-    font-size: .5rem;
-  }
-
-  &__edit-icon {
-    font-size: .5rem;
+  width: 100%;
+  height: 3rem;
+gap: 1rem;
+  &__edit-mode, &__edit-icon {
+    
+    height: 18px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
+
+
+
+
+
+.modif-note {
+  width: 84px;
+  height: 18px;
+  
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  gap: 1rem;
+}
+.modif-note__icon, .modif-note__text {
+  display:flex;
+}
+
