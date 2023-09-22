@@ -146,6 +146,7 @@ footer nav ul {
 }
 
 .popup {
+  font-family: "Syne", sans-serif;
   position: fixed;
   top: 55%;
   left: 50%;
@@ -172,7 +173,8 @@ footer nav ul {
   font-size: 24px;
 }
 
-h2 {
+.popup-title {
+  color: #3D3D3D;
   padding-top: 60px;
   padding-bottom: 45px;
 }
@@ -252,15 +254,43 @@ h2 {
   width: 420px;
   height: 169px;
   flex-shrink: 0;
+  margin: 10px;
   background-color: #E8F1F6;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #B9C5CC;
 }
 .photo-modifier .stand-in-photo .my-photo-icon {
   font-size: 76px;
   width: 76px;
   height: 76px;
   flex-shrink: 0;
+}
+.photo-modifier .stand-in-photo button {
+  width: 173px;
+  height: 36px;
+  flex-shrink: 0;
+  border: transparent;
+  border-radius: 50px;
+  background: #CBD6DC;
+  color: #306685;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-family: "Work", sans-serif;
+}
+.photo-modifier .stand-in-photo p {
+  color: rgba(68, 68, 68, 0.3333333333);
+  text-align: center;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.photo-modifier .stand-in-photo .image-thumbnail {
+  width: 30%;
+  height: auto;
+  z-index: 103;
 }
 .photo-modifier .input-wrapper {
   position: relative;
@@ -272,10 +302,17 @@ h2 {
   transform: translateY(-50%);
   pointer-events: none;
 }
-.photo-modifier .input-label {
+.photo-modifier .input-group {
+  display: flex;
+  flex-direction: column;
+}
+.photo-modifier .input-group .input-label {
+  align-self: flex-start;
   color: #3D3D3D;
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 5px;
+  font-family: "Syne", sans-serif;
 }
 .photo-modifier .input-field {
   border: transparent;
@@ -289,11 +326,15 @@ h2 {
 }
 .photo-modifier .validate-button {
   height: 37px;
-  width: 137px;
+  width: 237px;
   border: transparent;
   border-radius: 60px;
   background: #A7A7A7;
   padding: 10px 30px;
+  color: white;
+}
+.photo-modifier .validate-button .button-activated {
+  background: #1D6154;
   color: white;
 }
 

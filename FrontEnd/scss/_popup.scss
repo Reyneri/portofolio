@@ -12,21 +12,23 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 100;
-  }
-  
+}
+
 
 // Popup blanc
 .popup {
-    
-    .close-icon{
+    font-family: 'Syne', sans-serif;
+
+    .close-icon {
         width: 24px;
         position: absolute;
         top: 15px;
         right: 15px;
-        cursor:pointer;
+        cursor: pointer;
         z-index: 3;
+
         i {
-font-size: 24px;
+            font-size: 24px;
         }
     }
 
@@ -36,17 +38,18 @@ font-size: 24px;
     transform: translate(-50%, -50%);
     width: 630px;
     height: 680px;
-    padding: 15px 15px 15px; 
+    padding: 15px 15px 15px;
     flex-shrink: 0;
     background: #FFF;
     border-radius: 10px;
     z-index: 101;
-   
+
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.popup-title {
+    color: #3D3D3D;
     padding-top: 60px;
     padding-bottom: 45px;
 }
@@ -72,7 +75,7 @@ h2 {
     flex-basis: calc(10% - 6px);
     margin: 3px;
     position: relative;
-    
+
 
     .thumbnail {
         width: 79px;
@@ -80,6 +83,7 @@ h2 {
         flex-shrink: 0;
         // padding: 6px;
     }
+
     .icon-wrapper {
         position: absolute;
         top: 6px;
@@ -92,7 +96,7 @@ h2 {
 
         i {
             color: white;
-            font-size: 12px;  
+            font-size: 12px;
         }
     }
 }
@@ -118,7 +122,7 @@ h2 {
     font-size: 14px;
     font-weight: 700;
     line-height: 36px;
-    
+
 }
 
 
@@ -128,32 +132,68 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     .top-left-arrow {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      height: 21px;
-      font-size: 21px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        height: 21px;
+        font-size: 21px;
     }
-    
+
     .stand-in-photo {
+        
         width: 420px;
         height: 169px;
         flex-shrink: 0;
+        margin: 10px;
         background-color: #E8F1F6;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #B9C5CC;
 
         .my-photo-icon {
-            font-size: 76px; 
+            font-size: 76px;
             width: 76px;
             height: 76px;
             flex-shrink: 0;
+        }
+
+        button {
+            width: 173px;
+            height: 36px;
+            flex-shrink: 0;
+            border: transparent;
+            border-radius: 50px;
+            background: #CBD6DC;
+            color: #306685;
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: 500;
+
+            font-family: 'Work', sans-serif;
+
+        }
+
+        p {
+            color: #4445;
+            text-align: center;
+            font-size: 10px;
+            margin-top: 5px;
+        }
+
+
+        .image-thumbnail {
+            width: 30%; 
+            height: auto;
+            z-index: 103; 
           }
     }
-      
-    
+
+
+
     .input-wrapper {
         position: relative;
 
@@ -162,17 +202,25 @@ h2 {
             right: 15px;
             top: 50%;
             transform: translateY(-50%);
-            pointer-events: none; 
-          }
+            pointer-events: none;
+        }
     }
-      
-      .input-label {
-        color: #3D3D3D;
-        font-size: 14px;
-        font-weight: 500;
-      }
-      
-      .input-field {
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+
+        .input-label {
+            align-self: flex-start;
+            color: #3D3D3D;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            font-family: 'Syne', sans-serif;
+        }
+    }
+
+    .input-field {
         border: transparent;
         width: 420px;
         height: 51px;
@@ -180,18 +228,23 @@ h2 {
         background: #FFF;
         box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
         margin: 10px 0;
-        padding-right: 30px; 
-      }
-      
-     
+        padding-right: 30px;
+    }
+
+
 
     .validate-button {
         height: 37px;
-        width: 137px;
+        width: 237px;
         border: transparent;
-      border-radius: 60px;
-      background: #A7A7A7;
-      padding: 10px 30px;
-      color: white;
+        border-radius: 60px;
+        background: #A7A7A7;
+        padding: 10px 30px;
+        color: white;
+
+        .button-activated {
+            background: #1D6154; 
+            color: white;
+          }
     }
-  }
+}
