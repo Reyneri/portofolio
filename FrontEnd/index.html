@@ -15,12 +15,91 @@
 </head>
 
 <body>
-	<div class="admin-bar">
+	<!-- <div class="admin-bar">
 		<span class="admin-bar__edit-icon"><i class="fas fa-edit"></i></span>
 		<span class="admin-bar__edit-mode">Mode Édition</span>
+	</div> -->
+
+	<div class="modif-window">
+		<!-- Background semi-transparent -->
+		<div class="background"></div>
+
+		<!-- Contenu du Popup -->
+		<div class="popup photo-modifier ">
+			<i class="fas fa-arrow-left top-left-arrow"></i>
+
+			<div class="close-icon"><i class="fas fa-times"></i></div>
+			<h2>Galerie photo</h2>
+
+			<!-- Espace drop in photo -->
+
+			<div class="stand-in-photo">
+				<i class="fas fa-image my-photo-icon"></i>
+
+			</div>
+
+			<label for="title-input" class="input-label">Titre</label>
+			<input type="text" id="title-input" class="input-field">
+
+			
+				<label for="categories-input" class="input-label">Catégories</label>
+				<div class="input-wrapper">
+					<input list="categories" id="categories-input" class="input-field">
+				<i class="fas fa-angle-down"></i></div>
+				<datalist id="categories">
+				  <option value="Option 1">
+				  <option value="Option 2">
+				  <option value="Option 3">
+				  <option value="Option 4">
+				  <option value="Option 5">
+				</datalist>
+			  
+
+			<button class="validate-button">Valider</button>
+
+
+			<!-- Espace gallerie de modifications des mignatures -->
+
+			<!-- <div class="miniatures">
+				<div class="thumbnail-wrapper">
+					<img src="/FrontEnd/assets/images/abajour-tahina.png" class="thumbnail" alt="Miniature 1">
+					<div class="icon-wrapper">
+						<i class="fas fa-trash"></i>
+					</div>
+
+
+				</div>
+				<div class="thumbnail-wrapper">
+					<img src="/FrontEnd/assets/images/abajour-tahina.png" class="thumbnail" alt="Miniature 1">
+					<div class="icon-wrapper">
+						<i class="fas fa-trash"></i>
+					</div>
+
+
+				</div>
+				<div class="thumbnail-wrapper">
+					<img src="/FrontEnd/assets/images/abajour-tahina.png" class="thumbnail" alt="Miniature 1">
+					<div class="icon-wrapper">
+						<i class="fas fa-trash"></i>
+					</div>
+
+
+				</div>
+			</div> -->
+
+			<!-- Barre de séparation -->
+			<div class="separator"></div>
+
+			<!-- Bouton Ajouter une photo -->
+			<!-- <button class="add-photo-btn">Ajouter Photo</button> -->
+
+
+		</div>
 	</div>
-<div class="main-content">
-	
+
+
+	<div class="main-content">
+
 		<header>
 			<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 			<nav>
@@ -32,8 +111,8 @@
 				</ul>
 			</nav>
 		</header>
-	
-	
+
+
 		<main>
 			<section id="introduction">
 				<figure>
@@ -41,7 +120,8 @@
 				</figure>
 				<article>
 					<h2>Designer d'espace</h2>
-					<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison
+					<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la
+						livraison
 						finale du chantier.</p>
 					<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les
 						couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du
@@ -51,7 +131,7 @@
 				</article>
 			</section>
 			<section id="portfolio">
-	
+
 				<div class="en-tete">
 					<h2>Mes Projets</h2>
 					<div class="note-modifier">
@@ -61,16 +141,16 @@
 						<span class="note-modifier__text">modifier</span>
 					</div>
 				</div>
-	
-	
+
+
 				<div class="barre-btn">
 					<button class="barre-btn__button barre-btn__button--active">Tous</button>
 					<button class="barre-btn__button">Appartement</button>
 					<button class="barre-btn__button">Tous</button>
 					<button class="barre-btn__button">Tous</button>
 				</div>
-	
-	
+
+
 				<div class="gallery">
 					<figure>
 						<img src="assets/images/abajour-tahina.png" alt="Abajour Tahina">
@@ -132,7 +212,7 @@
 				</form>
 			</section>
 		</main>
-	
+
 		<footer>
 			<nav>
 				<ul>
@@ -140,30 +220,10 @@
 				</ul>
 			</nav>
 		</footer>
-		<div class="modif-window">
-	
-			<div class="background"></div>
-	
-	
-			<div class="popup">
-				<h2>Titre pop up</h2>
-				<div class="miniatures">
-					<img src="" class="thumbnail">
-					<img src="" class="thumbnail">
-					<img src="" class="thumbnail">
-					<img src="" class="thumbnail">
-					<img src="" class="thumbnail">
-	
-	
-				</div>
-				<!-- Barre séparatrice
-				<div class="separator"></div>
-				<!-- Bouton Ajouter Photo -->
-				<button class="add-photo-btn">Ajouter Photo</button>
-			</div>
-		</div>
-</div>
 
+
+
+	</div>
 </body>
 
 </html>
