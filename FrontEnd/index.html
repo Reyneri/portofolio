@@ -20,28 +20,28 @@
 		<span class="admin-bar__edit-mode">Mode Édition</span>
 	</div> -->
 
-	<div class="modif-window">
+	<!-- <div class="modif-window">
 		<!-- Background semi-transparent -->
-		<div class="background"></div>
+		<!-- <div class="background"></div> -->
 
 		<!-- Contenu du Popup -->
-		<div class="popup photo-modifier ">
-			<i class="fas fa-arrow-left top-left-arrow"></i>
+		<!-- <div class="popup photo-modifier ">
+			<i class="fas fa-arrow-left top-left-arrow"></i> -->
 
-			<div class="close-icon"><i class="fas fa-times"></i></div>
-			<h2 class="popup-title">Titre Popup Ajout Modif</h2>
+			<!-- <div class="close-icon"><i class="fas fa-times"></i></div>
+			<h2 class="popup-title">Titre Popup Ajout Modif</h2> --> -->
 
 			<!-- Espace drop in photo -->
 
-			<div class="stand-in-photo">
+			<!-- <div class="stand-in-photo">
 				<!-- <i class="fas fa-image my-photo-icon"></i>
 				<button>+ Ajouter Photo</button>
 				<p>jpg, png : 4mo max </p> -->
 
 				<!-- Miniature de l'image ajoutée -->
-  <img src="/FrontEnd/assets/images/appartement-paris-v.png" class="image-thumbnail" >
+  <!-- <img src="/FrontEnd/assets/images/appartement-paris-v.png" class="image-thumbnail" > 
 
-			</div>
+			</div> 
 
 			<div class="input-group">
 				<label for="title-input" class="input-label">Titre</label>
@@ -68,8 +68,8 @@
 
 
 			<!-- Espace gallerie de modifications des mignatures -->
-
-			<!-- <div class="miniatures">
+<!-- 
+			<div class="miniatures">
 				<div class="thumbnail-wrapper">
 					<img src="/FrontEnd/assets/images/abajour-tahina.png" class="thumbnail" alt="Miniature 1">
 					<div class="icon-wrapper">
@@ -94,21 +94,21 @@
 
 
 				</div>
-			</div> -->
+			</div>
 
-			<!-- Barre de séparation -->
-			<div class="separator"></div>
+			Barre de séparation
+			<div class="separator"></div> -->
 
 
 
-			<!-- Bouton Ajouter une photo -->
-			<!-- <button class="add-photo-btn">Ajouter Photo</button> -->
+			<!-- Bouton Ajouter une photo 
+			<button class="add-photo-btn">Ajouter Photo</button>
 
-			<!-- bouton valider ajout de photo  -->
+			<!-- bouton valider ajout de photo  
 			<button class="validate-button ">Valider</button>
 
 		</div>
-	</div>
+	 </div> -->
 
 
 	<div class="main-content">
@@ -156,11 +156,12 @@
 				</div>
 
 
-				<div class="barre-btn">
-					<button class="barre-btn__button barre-btn__button--active">Tous</button>
-					<button class="barre-btn__button">Appartement</button>
-					<button class="barre-btn__button">Tous</button>
-					<button class="barre-btn__button">Tous</button>
+				<div class="barre-btn" id="tri">
+					<button class="barre-btn__button barre-btn__button--active" id="btn-tous">Tous</button>
+					<button class="barre-btn__button" id="btn-objets">Objets</button>
+					<button class="barre-btn__button"id="btn-appartements">Appartements </button>
+					<button class="barre-btn__button"id="btn-appartements">Appartements</button>
+
 				</div>
 
 

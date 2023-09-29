@@ -388,7 +388,10 @@ body {
 }
 
 footer {
+  flex-direction: row-reverse;
+  display: flex;
   background-color: white;
+  width: 100%;
 }
 
 header {
@@ -500,6 +503,7 @@ nav li:hover {
   gap: 1rem;
 }
 
-.modif-note__icon, .modif-note__text {
+.modif-note__icon,
+.modif-note__text {
   display: flex;
 }/*# sourceMappingURL=style.css.map */
