@@ -5,6 +5,7 @@
         "imageUrl": "http://localhost:5678/images/abajour-tahina1651286843956.png",
         "categoryId": 1,
         "userId": 1,
+
         "category": {
             "id": 1,
             "name": "Objets"
@@ -16,6 +17,7 @@
         "imageUrl": "http://localhost:5678/images/appartement-paris-v1651287270508.png",
         "categoryId": 2,
         "userId": 1,
+
         "category": {
             "id": 2,
             "name": "Appartements"
@@ -27,6 +29,7 @@
         "imageUrl": "http://localhost:5678/images/restaurant-sushisen-londres1651287319271.png",
         "categoryId": 3,
         "userId": 1,
+
         "category": {
             "id": 3,
             "name": "Hotels & restaurants"
@@ -38,6 +41,7 @@
         "imageUrl": "http://localhost:5678/images/la-balisiere1651287350102.png",
         "categoryId": 2,
         "userId": 1,
+
         "category": {
             "id": 2,
             "name": "Appartements"
@@ -49,6 +53,7 @@
         "imageUrl": "http://localhost:5678/images/structures-thermopolis1651287380258.png",
         "categoryId": 1,
         "userId": 1,
+        
         "category": {
             "id": 1,
             "name": "Objets"

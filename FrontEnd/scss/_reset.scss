@@ -29,9 +29,12 @@
   }
   
   body {
+    display: flex;
     line-height: 1;
     z-index: 0;
     position: relative;
+    min-height: 100vh;
+    flex-direction: column;
   }
   
   ol, ul {
@@ -144,6 +147,7 @@
   }
   
   footer {
+    margin-top: auto;
     nav {
       ul {
         display: flex;

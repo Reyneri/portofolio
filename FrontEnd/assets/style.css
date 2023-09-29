@@ -25,9 +25,12 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  display: flex;
   line-height: 1;
   z-index: 0;
   position: relative;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 ol, ul {
@@ -124,6 +127,9 @@ table {
   border-radius: 60px;
 }
 
+footer {
+  margin-top: auto;
+}
 footer nav ul {
   display: flex;
   justify-content: flex-end;
@@ -439,7 +445,7 @@ nav li:hover {
 }
 
 .main-content {
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 
 .barre-btn {
